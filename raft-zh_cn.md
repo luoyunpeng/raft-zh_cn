@@ -114,7 +114,7 @@ Raft 是一种用来管理章节 2 中描述的复制日志的算法。图 2 为
 |----|----|
 |term| leader的任期号|
 |leaderId| leader的 Id，以便于跟随者重定向请求|
-|prevLogIndex|新的日志条目紧随之前的索引值|
+|prevLogIndex|新的日志条目的上一条的索引值|
 |prevLogTerm|prevLogIndex 条目的任期号|
 |entries[]|准备存储的日志条目（表示心跳时为空；一次性发送多个是为了提高效率）|
 |leaderCommit|leader已经提交的日志的索引值|
